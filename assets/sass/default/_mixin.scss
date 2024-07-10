@@ -1,0 +1,14 @@
+@mixin text-trans($value){
+    text-transform: $value;
+}
+
+@mixin flex-justify($value){
+display: flex;
+justify-content: $value;
+}
+
+@mixin a-styling($color,$fsize,$fwei){
+color:$color;
+font-size: $fsize;
+font-weight: $fwei;
+}

@@ -1,0 +1,19 @@
+@import "default/mixin";
+/*=================================
+  Header styling starts here
+=================================*/
+header {
+padding: 20px 0px;
+}
+
+.nav-list {
+  & { @include flex-justify(end);}
+
+  & a {
+    padding: 12px 13px;
+    @include a-styling(#a7a7a7,17px,900);
+  }
+}
+/*=================================
+  Header styling ends here
+=================================*/
