@@ -33,17 +33,31 @@ font-weight: $fwei;
         align-items: center;
     }
     
-    & .line{
-        display: flex;
-        text-indent: -9999px;
-        border-bottom: 2px solid #3f3c3c;
+    .line{
         width: 257px;
-       
-        &::before{
-           content: " ";
-            display: flex;
-            text-indent: 0;
-       
-        }
+        border-bottom: 2px solid #3f3c3c;
+        @include font-icon(" ");
+    }
+}
+
+@mixin heading($pad,$color,$fsize)
+{
+padding-bottom: $pad;
+color: $color;
+font-size: $fsize;
+}
+
+@mixin font-icon($value){
+    &{
+    display: flex;
+    text-indent: -9999px;
+    }
+
+    &::before{
+       content: $value;
+       font-family: "fontAwesome";
+        display: flex;
+        text-indent: 0;
+   
     }
 }

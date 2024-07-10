@@ -9,7 +9,7 @@
 
 & .wrapper{
     width: 100%;
-    height: 100vh;
+    height: 121vh;
 }
 
 &-image{
@@ -20,14 +20,12 @@
 &-content{
    &{ 
     width: 37%;
-    @include position-top(absolute,2,59%,76%);
-    transform: translate(-50%,-50%);
+    @include position-top(absolute,2,48.6%,76%);
     text-align: center;
+    transform: translate(-50%,-50%);
 
    & h1{
-    font-size: 41px;
-    color: #3f3c3c;
-    padding-bottom: 18px;
+    @include heading(18px,#3f3c3c,41px);
    }
 }
 }
