@@ -39,3 +39,6 @@ li {
     @include text-trans(capitalize);
 }
     
+.heading-span{
+    @include heading-span; 
+}

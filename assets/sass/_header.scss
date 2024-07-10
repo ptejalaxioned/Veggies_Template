@@ -3,11 +3,15 @@
   Header styling starts here
 =================================*/
 header {
+width: 100%;
 padding: 20px 0px;
+@include position-top(absolute,3,0,0);
 }
 
 .nav-list {
-  & { @include flex-justify(end);}
+  & {
+     @include flex-justify(end);
+    }
 
   & a {
     padding: 12px 13px;
