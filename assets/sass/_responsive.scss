@@ -1,0 +1,34 @@
+/*media query starts*/
+/*media query for 996px starts here*/
+
+/*=================================
+  hover styling starts here
+=================================*/
+/*media query for hover starts here*/
+@media only screen and (min-width: 996px) {
+  .nav-list a:hover {
+    @include hover(none);
+    &:hover {
+      border: 1px solid black;
+    }
+  }
+
+  .menu-name-list a {
+    @include hover(#000);
+  }
+
+  .contact button,
+  .icon a {
+    @include hover(none);
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  .bootstrap {
+    @include hover(#ff0000);
+  }
+}
+/*=================================
+  hover styling ends here
+=================================*/

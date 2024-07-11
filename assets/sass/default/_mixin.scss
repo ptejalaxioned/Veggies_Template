@@ -95,3 +95,12 @@
     background-color: transparent;
     font-size: 17px;
   }
+
+  @mixin hover($value){
+    &:hover{
+        color: $value;
+        cursor: pointer;
+        transition: all 1s;
+    }
+
+  }

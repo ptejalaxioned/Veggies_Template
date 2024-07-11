@@ -552,5 +552,40 @@ footer p {
 /*=================================
   footer styling ends here
 =================================*/
+/*media query starts*/
+/*media query for 996px starts here*/
+/*=================================
+  hover styling starts here
+=================================*/
+/*media query for hover starts here*/
+@media only screen and (min-width: 996px) {
+  .nav-list a:hover:hover {
+    color: none;
+    cursor: pointer;
+    transition: all 1s; }
+  .nav-list a:hover:hover {
+    border: 1px solid black; }
+
+  .menu-name-list a:hover {
+    color: #000;
+    cursor: pointer;
+    transition: all 1s; }
+
+  .contact button:hover,
+  .icon a:hover {
+    color: none;
+    cursor: pointer;
+    transition: all 1s; }
+  .contact button:hover,
+  .icon a:hover {
+    background-color: #fff; }
+
+  .bootstrap:hover {
+    color: #ff0000;
+    cursor: pointer;
+    transition: all 1s; } }
+/*=================================
+  hover styling ends here
+=================================*/
 
 /*# sourceMappingURL=style.css.map */
