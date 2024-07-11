@@ -1,0 +1,26 @@
+@import "default/mixin";
+@import "default/variable";
+/*=================================
+  specials styling starts here
+=================================*/
+.specials {
+  padding: 69px 0 104px;
+
+  & .wrapper {
+    width: 89.8%;
+  }
+  
+  & .img-list {
+    width: 100%;
+    margin: 66px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    & li {
+      width: 16.66%;
+    }
+  }
+}
+/*=================================
+  specials styling ends here
+=================================*/
