@@ -1,3 +1,5 @@
+@import "variable";
+
 @mixin text-trans($value){
     text-transform: $value;
 }
@@ -60,4 +62,21 @@ font-size: $fsize;
         text-indent: 0;
    
     }
+}
+
+@mixin h2{
+@include heading(3px,#767676,44px);
+font-weight: 900;
+}
+
+@mixin flex-gap($value)
+{
+    display: flex;
+    gap: $value;
+}
+
+@mixin flex-dir($dir)
+{
+    display: flex;
+    flex-direction:$dir;
 }

@@ -1,4 +1,5 @@
 @import "default/mixin";
+@import "default/variable";
 /*=================================
   Banner styling starts here
 =================================*/
@@ -25,7 +26,7 @@
     transform: translate(-50%,-50%);
 
    & h1{
-    @include heading(18px,#3f3c3c,41px);
+    @include heading(18px,$darkGrey,41px);
    }
 }
 }

@@ -207,6 +207,12 @@ li {
     display: flex;
     text-indent: 0; }
 
+h2 {
+  padding-bottom: 3px;
+  color: #767676;
+  font-size: 44px;
+  font-weight: 900; }
+
 /*=================================
   Header styling starts here
 =================================*/
@@ -266,7 +272,15 @@ header {
 =================================*/
 .turnip-green {
   padding: 129px 0;
-  background-color: #e7b90e; }
+  background-color: #e7b90e;
+  color: #3f3c3c; }
+.turnip-green h4 {
+  padding: 18px 0 22px;
+  font-size: 18px;
+  font-weight: 900; }
+.turnip-green p {
+  font-size: 15px;
+  letter-spacing: 1px; }
 .turnip-green .turnip-green-list {
   display: flex;
   gap: 45px; }

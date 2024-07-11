@@ -2,27 +2,37 @@
 /*=================================
   turnip-green styling starts here
 =================================*/
-.turnip-green{
-    &{
-        padding:129px 0;
-        background-color: #e7b90e;
-    }
+.turnip-green {
+  & {
+    padding: 129px 0;
+    background-color: #e7b90e;
+    color: $darkGrey;
+  }
 
-    & .turnip-green-list{
-        display: flex;
-        gap: 45px;
+  & h4 {
+    padding: 18px 0 22px;
+    font-size: 18px;
+    font-weight: 900;
+  }
 
-        & li{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
+  & p {
+font-size: 15px;
+letter-spacing: 1px;
+  }
+
+  & .turnip-green-list {
+    @include flex-gap(45px);
+
+    & li {
+      @include flex-dir(column);
+      align-items: center;
+      text-align: center;
     }
-   & .bowl{
+  }
+  & .bowl {
     @include font-icon("\f823");
     font-size: 80px;
-   }
+  }
 }
 /*=================================
   turnip-green styling ends here

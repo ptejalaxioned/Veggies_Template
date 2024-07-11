@@ -42,3 +42,7 @@ li {
 .heading-span{
     @include heading-span; 
 }
+
+h2{
+  @include h2;
+}
