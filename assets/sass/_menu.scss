@@ -28,21 +28,7 @@
   & li {
     width: 47.7%;
     display: flex;
-    & .menu-div {
-        width: 95%;
-      @include flex-dir(column);
-      gap: 2px;
-    }
-    & .dish-name {
-      @include flex-gap(3px);
-      font-size: 19px;
-      @include font-after(" ");
-      &::after {
-        width: 47.4%;
-        height: 17px;
-        border-bottom: 2px dotted $lightGrey;
-      }
-    }
+
   }
 }
 
@@ -50,6 +36,23 @@
     @include font-after("$");
     padding-top: 3px;
 }
+
+.menu-div {
+    width: 95%;
+  @include flex-dir(column);
+  gap: 2px;
+}
+
+.dish-name {
+    @include flex-gap(3px);
+    font-size: 19px;
+    @include font-after(" ");
+    &::after {
+      width: 47.4%;
+      height: 17px;
+      border-bottom: 2px dotted $lightGrey;
+    }
+  }
 /*=================================
   menu styling ends here
 =================================*/

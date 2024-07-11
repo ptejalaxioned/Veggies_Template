@@ -17,33 +17,6 @@ footer{
         border-top: 2px solid #f0f8ff;
     }
 
-    .icon{
-        border: 1px solid $darkGrey;
-        & a{
-            color: $lightGrey;
-            font-size: 20px;
-        }
-    }
-
-    .facebook{
-        padding: 6px 10px 3px;
-        @include font-icon("\f39e");
-    
-    }
-    .linkedin{
-        padding: 6px 8px 3px;
-        @include font-icon("\f0e1");
-  
-    }
-    .made-with{
-        color: $lightGrey;
-        @include font-after("\f004");
-        &::after{
-            padding-left: 3px;
-            color: #ff0000;
-        }
-    }
-
     p{
         padding-left: 88px;
     }
@@ -51,6 +24,34 @@ footer{
 }
 .bootstrap{
     color: #228b51;
+}
+
+
+.facebook{
+    padding: 6px 10px 3px;
+    @include font-icon("\f39e");
+
+}
+.linkedin{
+    padding: 6px 8px 3px;
+    @include font-icon("\f0e1");
+
+}
+.made-with{
+    color: $lightGrey;
+    @include font-after("\f004");
+    &::after{
+        padding-left: 3px;
+        color: #ff0000;
+    }
+}
+
+.icon{
+    border: 1px solid $darkGrey;
+    & a{
+        color: $lightGrey;
+        font-size: 20px;
+    }
 }
 
 /*=================================

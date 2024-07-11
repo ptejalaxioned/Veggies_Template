@@ -19,20 +19,22 @@
 font-size: 15px;
 letter-spacing: 1px;
   }
+}
 
-  & .turnip-green-list {
-    @include flex-gap(45px);
 
-    & li {
-      @include flex-dir(column);
-      align-items: center;
-      text-align: center;
-    }
+.turnip-green-list {
+  @include flex-gap(45px);
+
+  & li {
+    @include flex-dir(column);
+    align-items: center;
+    text-align: center;
   }
-  & .bowl {
-    @include font-icon("\f823");
-    font-size: 80px;
-  }
+}
+
+.bowl {
+  @include font-icon("\f823");
+  font-size: 80px;
 }
 /*=================================
   turnip-green styling ends here

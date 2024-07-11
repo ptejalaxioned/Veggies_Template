@@ -28,15 +28,20 @@
         @include flex-dir(column);
         text-align: center;
 
-        & .sign{
-         width: 40%;
-        }
-
-        & .sign-div{
-            @include flex-justify(end)
-           }
     }
 }
+
+.sign{
+    &{
+        width: 40%;
+    }
+
+    &-div{
+        @include flex-justify(end)
+       }
+   }
+
+  
 /*=================================
   about-us styling ends here
 =================================*/

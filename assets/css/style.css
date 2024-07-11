@@ -237,6 +237,9 @@ header {
   Header styling ends here
 =================================*/
 /*=================================
+  main styling starts here
+=================================*/
+/*=================================
   Banner styling starts here
 =================================*/
 .banner {
@@ -281,20 +284,22 @@ header {
 .turnip-green p {
   font-size: 15px;
   letter-spacing: 1px; }
-.turnip-green .turnip-green-list {
+
+.turnip-green-list {
   display: flex;
   gap: 45px; }
-  .turnip-green .turnip-green-list li {
+  .turnip-green-list li {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center; }
-.turnip-green .bowl {
+
+.bowl {
   font-size: 80px; }
-  .turnip-green .bowl {
+  .bowl {
     display: flex;
     text-indent: -9999px; }
-  .turnip-green .bowl::before {
+  .bowl::before {
     content: "";
     font-family: "fontAwesome";
     display: flex;
@@ -310,13 +315,14 @@ header {
   padding: 69px 0 104px; }
   .specials .wrapper {
     width: 89.8%; }
-  .specials .img-list {
-    width: 100%;
-    margin: 66px auto;
-    display: flex;
-    flex-wrap: wrap; }
-    .specials .img-list li {
-      width: 16.66%; }
+
+.img-list {
+  width: 100%;
+  margin: 66px auto;
+  display: flex;
+  flex-wrap: wrap; }
+  .img-list li {
+    width: 16.66%; }
 
 /*=================================
   specials styling ends here
@@ -342,11 +348,12 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center; }
-  .about-us-left .sign {
-    width: 40%; }
-  .about-us-left .sign-div {
-    display: flex;
-    justify-content: end; }
+
+.sign {
+  width: 40%; }
+.sign-div {
+  display: flex;
+  justify-content: end; }
 
 /*=================================
   about-us styling ends here
@@ -373,28 +380,30 @@ header {
   .main-menu-list li {
     width: 47.7%;
     display: flex; }
-    .main-menu-list li .menu-div {
-      width: 95%;
-      display: flex;
-      flex-direction: column;
-      gap: 2px; }
-    .main-menu-list li .dish-name {
-      display: flex;
-      gap: 3px;
-      font-size: 19px; }
-      .main-menu-list li .dish-name::after {
-        content: " ";
-        font-family: "fontAwesome"; }
-      .main-menu-list li .dish-name::after {
-        width: 47.4%;
-        height: 17px;
-        border-bottom: 2px dotted #767676; }
 
 .price {
   padding-top: 3px; }
   .price::after {
     content: "$";
     font-family: "fontAwesome"; }
+
+.menu-div {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px; }
+
+.dish-name {
+  display: flex;
+  gap: 3px;
+  font-size: 19px; }
+  .dish-name::after {
+    content: " ";
+    font-family: "fontAwesome"; }
+  .dish-name::after {
+    width: 47.4%;
+    height: 17px;
+    border-bottom: 2px dotted #767676; }
 
 /*=================================
   menu styling ends here
@@ -479,6 +488,9 @@ header {
   contact styling ends here
 =================================*/
 /*=================================
+  main styling ends here
+=================================*/
+/*=================================
   footer styling starts here
 =================================*/
 footer {
@@ -494,44 +506,48 @@ footer .wrapper {
   justify-content: space-between;
   padding: 36px 0;
   border-top: 2px solid #f0f8ff; }
-footer .icon {
-  border: 1px solid #3f3c3c; }
-  footer .icon a {
-    color: #767676;
-    font-size: 20px; }
-footer .facebook {
-  padding: 6px 10px 3px; }
-  footer .facebook {
-    display: flex;
-    text-indent: -9999px; }
-  footer .facebook::before {
-    content: "";
-    font-family: "fontAwesome";
-    display: flex;
-    text-indent: 0; }
-footer .linkedin {
-  padding: 6px 8px 3px; }
-  footer .linkedin {
-    display: flex;
-    text-indent: -9999px; }
-  footer .linkedin::before {
-    content: "";
-    font-family: "fontAwesome";
-    display: flex;
-    text-indent: 0; }
-footer .made-with {
-  color: #767676; }
-  footer .made-with::after {
-    content: "";
-    font-family: "fontAwesome"; }
-  footer .made-with::after {
-    padding-left: 3px;
-    color: #ff0000; }
 footer p {
   padding-left: 88px; }
 
 .bootstrap {
   color: #228b51; }
+
+.facebook {
+  padding: 6px 10px 3px; }
+  .facebook {
+    display: flex;
+    text-indent: -9999px; }
+  .facebook::before {
+    content: "";
+    font-family: "fontAwesome";
+    display: flex;
+    text-indent: 0; }
+
+.linkedin {
+  padding: 6px 8px 3px; }
+  .linkedin {
+    display: flex;
+    text-indent: -9999px; }
+  .linkedin::before {
+    content: "";
+    font-family: "fontAwesome";
+    display: flex;
+    text-indent: 0; }
+
+.made-with {
+  color: #767676; }
+  .made-with::after {
+    content: "";
+    font-family: "fontAwesome"; }
+  .made-with::after {
+    padding-left: 3px;
+    color: #ff0000; }
+
+.icon {
+  border: 1px solid #3f3c3c; }
+  .icon a {
+    color: #767676;
+    font-size: 20px; }
 
 /*=================================
   footer styling ends here
