@@ -383,7 +383,8 @@ header {
       gap: 3px;
       font-size: 19px; }
       .main-menu-list li .dish-name::after {
-        content: " "; }
+        content: " ";
+        font-family: "fontAwesome"; }
       .main-menu-list li .dish-name::after {
         width: 47.4%;
         height: 17px;
@@ -392,7 +393,8 @@ header {
 .price {
   padding-top: 3px; }
   .price::after {
-    content: "$"; }
+    content: "$";
+    font-family: "fontAwesome"; }
 
 /*=================================
   menu styling ends here
@@ -405,7 +407,9 @@ header {
   color: #767676; }
 .contact .wrapper {
   width: 100%;
-  height: 745px; }
+  height: 745px;
+  margin-bottom: 15px;
+  align-items: center; }
 .contact .veggies {
   position: absolute;
   z-index: 1;
@@ -443,7 +447,7 @@ header {
 
 .contact-content {
   width: 36.5%;
-  margin: 65px auto 37px;
+  margin: 65px auto auto;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -473,6 +477,64 @@ header {
 
 /*=================================
   contact styling ends here
+=================================*/
+/*=================================
+  footer styling starts here
+=================================*/
+footer {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  top: none;
+  color: #3f3c3c; }
+footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 0;
+  border-top: 2px solid #f0f8ff; }
+footer .icon {
+  border: 1px solid #3f3c3c; }
+  footer .icon a {
+    color: #767676;
+    font-size: 20px; }
+footer .facebook {
+  padding: 6px 10px 3px; }
+  footer .facebook {
+    display: flex;
+    text-indent: -9999px; }
+  footer .facebook::before {
+    content: "";
+    font-family: "fontAwesome";
+    display: flex;
+    text-indent: 0; }
+footer .linkedin {
+  padding: 6px 8px 3px; }
+  footer .linkedin {
+    display: flex;
+    text-indent: -9999px; }
+  footer .linkedin::before {
+    content: "";
+    font-family: "fontAwesome";
+    display: flex;
+    text-indent: 0; }
+footer .made-with {
+  color: #767676; }
+  footer .made-with::after {
+    content: "";
+    font-family: "fontAwesome"; }
+  footer .made-with::after {
+    padding-left: 3px;
+    color: #ff0000; }
+footer p {
+  padding-left: 88px; }
+
+.bootstrap {
+  color: #228b51; }
+
+/*=================================
+  footer styling ends here
 =================================*/
 
 /*# sourceMappingURL=style.css.map */

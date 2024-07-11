@@ -83,6 +83,7 @@
 @mixin font-after($value) {
     &::after{
       content: $value;
+      font-family: "fontAwesome";
     }
   }
   
