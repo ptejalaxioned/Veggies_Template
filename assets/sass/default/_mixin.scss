@@ -1,82 +1,81 @@
 @import "variable";
 
-@mixin text-trans($value){
-    text-transform: $value;
+@mixin text-trans($value) {
+  text-transform: $value;
 }
 
-@mixin flex-justify($value){
-display: flex;
-justify-content: $value;
+@mixin flex-justify($value) {
+  display: flex;
+  justify-content: $value;
 }
 
-@mixin a-styling($color,$fsize,$fwei){
-color:$color;
-font-size: $fsize;
-font-weight: $fwei;
+@mixin flex-align($value) {
+  display: flex;
+  align-items: $value;
 }
 
-@mixin position-top($pos,$zIndex ,$top,$left)
-{
-    position: $pos;
-    z-index: $zIndex;
-    left: $left;
-    top: $top;
+@mixin a-styling($color, $fsize, $fwei) {
+  color: $color;
+  font-size: $fsize;
+  font-weight: $fwei;
 }
 
-@mixin height-obj{
-    height: 100%;
-    object-fit: cover;
-}
-@mixin heading-span
-{
-    &{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .line{
-        width: 257px;
-        border-bottom: 2px solid #3f3c3c;
-        @include font-icon(" ");
-    }
+@mixin position-top($pos, $zIndex, $top, $left) {
+  position: $pos;
+  z-index: $zIndex;
+  left: $left;
+  top: $top;
 }
 
-@mixin heading($pad,$color,$fsize)
-{
-padding-bottom: $pad;
-color: $color;
-font-size: $fsize;
+@mixin height-obj {
+  height: 100%;
+  object-fit: cover;
+}
+@mixin heading-span {
+  & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .line {
+    width: 257px;
+    border-bottom: 2px solid #3f3c3c;
+    @include font-icon(" ");
+  }
 }
 
-@mixin font-icon($value){
-    &{
+@mixin heading($pad, $color, $fsize) {
+  padding-bottom: $pad;
+  color: $color;
+  font-size: $fsize;
+}
+
+@mixin font-icon($value) {
+  & {
     display: flex;
     text-indent: -9999px;
-    }
+  }
 
-    &::before{
-       content: $value;
-       font-family: "fontAwesome";
-        display: flex;
-        text-indent: 0;
-   
-    }
-}
-
-@mixin h2{
-@include heading(3px,#767676,44px);
-font-weight: 900;
-}
-
-@mixin flex-gap($value)
-{
+  &::before {
+    content: $value;
+    font-family: "fontAwesome";
     display: flex;
-    gap: $value;
+    text-indent: 0;
+  }
 }
 
-@mixin flex-dir($dir)
-{
-    display: flex;
-    flex-direction:$dir;
+@mixin h2 {
+  @include heading(3px, #767676, 44px);
+  font-weight: 900;
+}
+
+@mixin flex-gap($value) {
+  display: flex;
+  gap: $value;
+}
+
+@mixin flex-dir($dir) {
+  display: flex;
+  flex-direction: $dir;
 }

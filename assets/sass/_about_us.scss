@@ -1,0 +1,41 @@
+@import "default/mixin";
+@import "default/variable";
+/*=================================
+  about-us styling starts here
+=================================*/
+.about-us{
+    &{
+        padding: 82px 0 124px;
+        background-color: #ddd;
+    }
+    
+    & .wrapper{
+        @include flex-gap(41px);
+        align-items: center;
+    }
+
+    &-left{
+        width: 50%;
+    }
+
+    & p{
+        font-size: 30px;
+        letter-spacing: 1px;
+        padding-top: 72px;
+    }
+    &-left{
+        @include flex-dir(column);
+        text-align: center;
+
+        & .sign{
+         width: 40%;
+        }
+
+        & .sign-div{
+            @include flex-justify(end)
+           }
+    }
+}
+/*=================================
+  about-us styling ends here
+=================================*/
