@@ -7,8 +7,9 @@
     &{
         padding: 82px 0 124px;
         background-color: #ddd;
+        color: $lightGrey;
     }
-    
+
     & .wrapper{
         @include flex-gap(41px);
         align-items: center;

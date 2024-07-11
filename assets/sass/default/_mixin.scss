@@ -66,7 +66,7 @@
 }
 
 @mixin h2 {
-  @include heading(3px, #767676, 44px);
+  @include heading(3px, $lightGrey, 44px);
   font-weight: 900;
 }
 
@@ -79,3 +79,10 @@
   display: flex;
   flex-direction: $dir;
 }
+
+@mixin font-after($value) {
+    &::after{
+      content: $value;
+    }
+  }
+  

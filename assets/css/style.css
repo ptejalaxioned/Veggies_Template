@@ -326,7 +326,8 @@ header {
 =================================*/
 .about-us {
   padding: 82px 0 124px;
-  background-color: #ddd; }
+  background-color: #ddd;
+  color: #767676; }
 .about-us .wrapper {
   display: flex;
   gap: 41px;
@@ -349,6 +350,52 @@ header {
 
 /*=================================
   about-us styling ends here
+=================================*/
+/*=================================
+  menu styling starts here
+=================================*/
+.menu {
+  padding: 80px 0;
+  color: #767676; }
+.menu-name-list {
+  margin: 70px auto 44px;
+  display: flex;
+  justify-content: center; }
+  .menu-name-list a {
+    padding: 10px 17px;
+    color: #767676; }
+
+.main-menu-list {
+  width: 100%;
+  display: flex;
+  gap: 51px;
+  flex-wrap: wrap; }
+  .main-menu-list li {
+    width: 47.7%;
+    display: flex; }
+    .main-menu-list li .menu-div {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      gap: 2px; }
+    .main-menu-list li .dish-name {
+      display: flex;
+      gap: 3px;
+      font-size: 19px; }
+      .main-menu-list li .dish-name::after {
+        content: " "; }
+      .main-menu-list li .dish-name::after {
+        width: 47.4%;
+        height: 17px;
+        border-bottom: 2px dotted #767676; }
+
+.price {
+  padding-top: 3px; }
+  .price::after {
+    content: "$"; }
+
+/*=================================
+  menu styling ends here
 =================================*/
 
 /*# sourceMappingURL=style.css.map */
