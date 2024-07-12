@@ -117,6 +117,13 @@
 
 .turnip-green {
   padding: 65px 0;
+  &-list {
+    justify-content: center;
+    flex-wrap: wrap;
+    & li{
+      width: 46%;
+    }
+  }
 }
 .specials {
   padding: 51px 0 37px;
@@ -169,9 +176,7 @@
     margin: 46px 0 41px;
   }
 }
-  .turnip-gree-list {
-    flex-wrap: wrap;
-  }
+ 
   .img-list{
   margin: 44px auto;
   & li{
@@ -186,9 +191,18 @@
 
 /*media query for 768px starts here*/
 @media only screen and (max-width: 768px) {
-.banner-content {
-  width: 57%;
-}
+
+  .banner{
+    &-content {
+      width: 57%;
+          left: 50%;
+          top: 50%;    
+    }
+    & .wrapper{
+      height: 87vh;
+    }
+  }
+
 .img-list li {
   width: 33.3%;
 }
@@ -209,6 +223,24 @@
 }
 }
 
+/*media query for 640px starts here*/
+@media only screen and (max-width: 640px) {
+.banner .wrapper {
+  height: 69vh;
+}
+.img-list li {
+  width: 50%;
+}
+.main-menu-list li {
+  width: 54.7%;
+}
+footer p {
+ padding-left: 0px; 
+}
+footer .wrapper {
+  padding: 36px 32px;
+}
+}
 /*media query for 480px starts here*/
 @media only screen and (max-width: 480px) {
 

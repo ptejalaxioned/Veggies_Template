@@ -23,6 +23,7 @@
 .main-menu-list {
   width: 100%;
   @include flex-gap(51px);
+  justify-content: center;
   flex-wrap: wrap;
 
   & li {
