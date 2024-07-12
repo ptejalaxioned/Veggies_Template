@@ -183,6 +183,32 @@
   padding-top: 40px;
 }
 }
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+.banner-content {
+  width: 57%;
+}
+.img-list li {
+  width: 33.3%;
+}
+.main-menu-list li {
+  width: 45.7%;
+}
+.dish-name::after {
+  width: 13.4%;
+}
+.about-us .wrapper {
+  flex-direction: column;
+}
+.about-us-left {
+  width: 80%;
+}
+.contact-content {
+  width: 61%;
+}
+}
+
 /*media query for 480px starts here*/
 @media only screen and (max-width: 480px) {
 
