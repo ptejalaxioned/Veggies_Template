@@ -761,13 +761,12 @@ footer p {
     text-align: center; }
   footer p {
     padding-left: 0px; } }
-/*media query for 480px starts here*/
+/*media query for 375px starts here*/
 @media only screen and (max-width: 375px) {
-  .dish-name::after {
-    width: 16%; }
-
   .dish-name {
     font-size: 18px; }
+  .dish-name::after {
+    width: 16%; }
 
   .menu-name-list {
     margin: 19px auto 19px; }
@@ -775,10 +774,9 @@ footer p {
   .main-menu-list {
     gap: 25px; }
 
-  .contact-info-list li {
-    width: 63%; }
-
   .contact {
-    padding-top: 4px; } }
+    padding-top: 4px; }
+    .contact-info-list li {
+      width: 63%; } }
 
 /*# sourceMappingURL=style.css.map */
