@@ -592,6 +592,27 @@ footer p {
   hover styling ends here
 =================================*/
 /*media query for 995px starts here*/
+@media only screen and (max-width: 1024px) {
+  .banner .wrapper {
+    height: 116vh; }
+
+  .main-menu-list li {
+    width: 46.7%; }
+
+  .dish-name::after {
+    width: 32.4%; }
+
+  .img-list li {
+    width: 25%; }
+
+  .contact img {
+    height: 165.5vh;
+    object-fit: cover; }
+  .contact .wrapper {
+    height: 779px; }
+  .contact-info-list li {
+    width: 45%; } }
+/*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
   .hamburger {
     padding-top: 0;
@@ -756,8 +777,7 @@ footer p {
 
   footer p {
     padding-left: 0px; }
-
-  footer .wrapper {
+  footer footer .wrapper {
     padding: 36px 32px; } }
 /*media query for 480px starts here*/
 @media only screen and (max-width: 480px) {
