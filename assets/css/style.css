@@ -623,7 +623,7 @@ footer p {
     transition: transform 1s; }
 
   .line::before {
-    content: '';
+    content: "";
     width: 17px;
     border-bottom: 3px solid #767676;
     border-radius: 2px;
@@ -657,24 +657,20 @@ footer p {
     transition: all 1s; } }
 /*media query for 480px starts here*/
 @media only screen and (max-width: 480px) {
-  .contact-content {
-    left: 0; }
-
   .banner-content {
     width: 90%;
     left: 50%;
     top: 50%; }
-
   .banner-image img {
     height: 470px;
     object-fit: cover; }
-
   .banner .wrapper {
     height: 470px; }
 
   .turnip-green {
-    padding: 84px 0; }
-
+    padding: 50px 0; }
+  .turnip-green-list {
+    gap: 30px; }
   .turnip-green-list {
     flex-wrap: wrap; }
     .turnip-green-list li {
@@ -687,20 +683,30 @@ footer p {
     .img-list li {
       width: 100%; }
 
+  .specials {
+    padding: 44px 0 16px; }
   .specials .wrapper {
     width: 85%; }
 
   .heading-span {
     text-align: center; }
 
+  .about-us {
+    padding: 45px 0 71px; }
   .about-us .wrapper {
-    flex-direction: column; }
-
+    flex-direction: column;
+    gap: 29px; }
   .about-us-left {
     width: 100%; }
-
   .about-us p {
     padding-top: 36px; }
+
+  .menu {
+    padding: 47px 0; }
+  .menu-name-list {
+    width: 90%;
+    margin: 36px auto 33px;
+    flex-wrap: wrap; }
 
   .main-menu-list li {
     width: 100%; }
@@ -708,13 +714,52 @@ footer p {
   .dish-name::after {
     width: 32.4%; }
 
-  .menu-name-list {
-    width: 92%;
-    margin: 36px auto 33px;
-    flex-wrap: wrap; }
-
   .contact img {
     height: 200vh;
-    object-fit: cover; } }
+    object-fit: cover; }
+  .contact-content {
+    width: 85%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    text-align: center; }
+  .contact-info-list {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center; }
+  .contact h3 {
+    margin-bottom: 8px; }
+  .contact-info-list {
+    margin: 38px 0 32px; }
+
+  .name-email {
+    flex-direction: column; }
+
+  .name-email-div {
+    width: 100%; }
+
+  form {
+    width: 75%;
+    margin: auto; }
+
+  .contact textarea {
+    height: 138px; }
+  .contact img {
+    height: 173vh; }
+  .contact {
+    padding-top: 17px; }
+  .contact-content {
+    margin: auto; }
+  .contact .wrapper {
+    height: 738px; }
+
+  footer .wrapper {
+    padding: 36px 41px;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+    text-align: center; }
+  footer p {
+    padding-left: 0px; } }
 
 /*# sourceMappingURL=style.css.map */
