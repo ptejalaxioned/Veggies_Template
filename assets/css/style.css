@@ -591,7 +591,11 @@ footer p {
 /*=================================
   hover styling ends here
 =================================*/
-/*media query for 995px starts here*/
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1280px) {
+  .banner .wrapper {
+    height: 138vh; } }
+/*media query for 1024px starts here*/
 @media only screen and (max-width: 1024px) {
   .banner .wrapper {
     height: 116vh; }
