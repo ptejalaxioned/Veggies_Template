@@ -31,17 +31,9 @@
 /*=================================
   hover styling ends here
 =================================*/
-/*media query for 1024px starts here*/
-@media only screen and (max-width: 1280px) {
-  .banner .wrapper {
-    height: 138vh;
-  }
-}
+
 /*media query for 1024px starts here*/
 @media only screen and (max-width: 1024px) {
-.banner .wrapper {
-  height: 116vh;
-}
 .main-menu-list li {
   width: 46.7%;
 }
@@ -144,9 +136,6 @@
   .wrapper {
     width: 95%;
   }
-.banner .wrapper{
-  height: 112vh;
-}
 
 .turnip-green {
   padding: 65px 0;
@@ -231,9 +220,6 @@
           left: 50%;
           top: 50%;    
     }
-    & .wrapper{
-      height: 87vh;
-    }
   }
 
 .img-list li {
@@ -258,9 +244,6 @@
 
 /*media query for 640px starts here*/
 @media only screen and (max-width: 640px) {
-.banner .wrapper {
-  height: 69vh;
-}
 .img-list li {
   width: 50%;
 }
@@ -289,10 +272,6 @@ footer .wrapper {
   &-image img {
     height: 470px;
     object-fit: cover;
-  }
-
-  & .wrapper {
-    height: 470px;
   }
 }
 

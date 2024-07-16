@@ -229,6 +229,7 @@ header {
   justify-content: end; }
 .nav-list a {
   padding: 12px 13px;
+  border: 1px solid transparent;
   color: #a7a7a7;
   font-size: 17px;
   font-weight: 900; }
@@ -249,14 +250,10 @@ header {
   position: relative; }
 .banner .wrapper {
   width: 100%;
-  height: 121vh; }
+  position: relative; }
 .banner-image {
   height: 100%;
-  object-fit: cover;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 0; }
+  object-fit: cover; }
 .banner-content {
   width: 37%;
   position: absolute;
@@ -592,14 +589,7 @@ footer p {
   hover styling ends here
 =================================*/
 /*media query for 1024px starts here*/
-@media only screen and (max-width: 1280px) {
-  .banner .wrapper {
-    height: 138vh; } }
-/*media query for 1024px starts here*/
 @media only screen and (max-width: 1024px) {
-  .banner .wrapper {
-    height: 116vh; }
-
   .main-menu-list li {
     width: 46.7%; }
 
@@ -686,9 +676,6 @@ footer p {
   .wrapper {
     width: 95%; }
 
-  .banner .wrapper {
-    height: 112vh; }
-
   .turnip-green {
     padding: 65px 0; }
     .turnip-green-list {
@@ -748,8 +735,6 @@ footer p {
     width: 57%;
     left: 50%;
     top: 50%; }
-  .banner .wrapper {
-    height: 87vh; }
 
   .img-list li {
     width: 33.3%; }
@@ -770,9 +755,6 @@ footer p {
     width: 61%; } }
 /*media query for 640px starts here*/
 @media only screen and (max-width: 640px) {
-  .banner .wrapper {
-    height: 69vh; }
-
   .img-list li {
     width: 50%; }
 
@@ -792,8 +774,6 @@ footer p {
   .banner-image img {
     height: 470px;
     object-fit: cover; }
-  .banner .wrapper {
-    height: 470px; }
 
   .turnip-green {
     padding: 50px 0; }

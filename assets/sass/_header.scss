@@ -16,6 +16,7 @@ padding: 20px 0px;
 
   & a {
     padding: 12px 13px;
+    border: 1px solid transparent;
     @include a-styling(#a7a7a7,17px,900);
   }
 
