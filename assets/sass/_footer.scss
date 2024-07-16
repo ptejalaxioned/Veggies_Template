@@ -3,26 +3,112 @@
 /*=================================
   footer styling starts here
 =================================*/
+.contact {
+    & {
+      color: $lightGrey;
+      @include position-top(absolute, 2, 0, 55%);
+    }
+
+    button {
+      padding: 16px 30px;
+      border: 1px solid #000;
+      background-color: transparent;
+      color: $lightGrey;
+      font-size: 16px;
+      font-weight: bolder;
+    }
+  
+    h3 {
+      margin-bottom: 16px;
+      font-size: 20px;
+      font-weight: 900;
+    }
+    .form-h {
+      margin-bottom: 13px;
+    }
+  
+    a {
+      color: $lightGrey;
+    }
+  
+    textarea {
+      height: 207px;
+      @include input-styling;
+      resize: none;
+    }
+  
+    .send-button {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .info {
+      line-height: 23px;
+    }
+
+  }
+  
+  .contact{
+    width: 36.5%;
+    margin: 52px auto auto;
+    @include flex-dir(column);
+  }
+  
+  .contact-info-list {
+    margin: 76px 0 57px;
+    @include flex-justify(space-between);
+  
+    & li {
+      width: 41%;
+    }
+  }
+  
+  .name-email {
+    @include flex-justify(space-between);
+  
+    &-div {
+      width: 47.5%;
+    }
+    input {
+      @include input-styling;
+    }
+  }
+  
+
+
 footer{
+    .contact h3 {
+        margin-bottom: 16px;
+        font-size: 20px;
+        font-weight: 900;
+      }
+
     &{
-        width: 100%;
         margin: auto;
-        @include position-top(absolute, 4, none, 0);
+        position: relative;
         color: $darkGrey;
     }
 
     & .wrapper{
-        @include flex-justify(space-between);
-        align-items: center;
-        padding:36px 0;
-        border-top: 2px solid #f0f8ff;
+        width: 100%;
     }
 
     p{
         padding-left: 88px;
     }
 
+
 }
+
+.footer-down{
+    width: 86.7%;
+    @include position-top(absolute, 4, none, 6.65%);   
+    bottom: 0;
+    @include flex-justify(space-between);
+    align-items: center;
+    padding:32px 0;
+    border-top: 2px solid #f0f8ff;
+}
+
 .bootstrap{
     color: #228b51;
 }

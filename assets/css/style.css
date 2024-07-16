@@ -410,23 +410,19 @@ header {
   menu styling ends here
 =================================*/
 /*=================================
-  contact styling starts here
+  main styling ends here
+=================================*/
+/*=================================
+  footer styling starts here
 =================================*/
 .contact {
-  position: relative;
-  color: #767676; }
-.contact .wrapper {
-  width: 100%;
-  height: 745px;
-  margin-bottom: 15px;
-  align-items: center; }
-.contact .veggies {
+  color: #767676;
   position: absolute;
-  z-index: 1;
-  left: 0;
+  z-index: 2;
+  left: 55%;
   top: 0; }
 .contact button {
-  padding: 13px 30px;
+  padding: 16px 30px;
   border: 1px solid #000;
   background-color: transparent;
   color: #767676;
@@ -441,7 +437,7 @@ header {
 .contact a {
   color: #767676; }
 .contact textarea {
-  height: 212px;
+  height: 207px;
   width: 100%;
   padding: 10px 13px;
   border: none;
@@ -455,18 +451,14 @@ header {
 .contact .info {
   line-height: 23px; }
 
-.contact-content {
+.contact {
   width: 36.5%;
-  margin: 65px auto auto;
+  margin: 52px auto auto;
   display: flex;
-  flex-direction: column;
-  position: absolute;
-  z-index: 2;
-  left: 55%;
-  top: 0; }
+  flex-direction: column; }
 
 .contact-info-list {
-  margin: 76px 0 56px;
+  margin: 76px 0 57px;
   display: flex;
   justify-content: space-between; }
   .contact-info-list li {
@@ -485,31 +477,31 @@ header {
     background-color: transparent;
     font-size: 17px; }
 
-/*=================================
-  contact styling ends here
-=================================*/
-/*=================================
-  main styling ends here
-=================================*/
-/*=================================
-  footer styling starts here
-=================================*/
+footer .contact h3 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 900; }
 footer {
-  width: 100%;
   margin: auto;
-  position: absolute;
-  z-index: 4;
-  left: 0;
-  top: none;
+  position: relative;
   color: #3f3c3c; }
 footer .wrapper {
+  width: 100%; }
+footer p {
+  padding-left: 88px; }
+
+.footer-down {
+  width: 86.7%;
+  position: absolute;
+  z-index: 4;
+  left: 6.65%;
+  top: none;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 36px 0;
+  padding: 32px 0;
   border-top: 2px solid #f0f8ff; }
-footer p {
-  padding-left: 88px; }
 
 .bootstrap {
   color: #228b51; }
@@ -600,7 +592,6 @@ footer p {
     width: 25%; }
 
   .contact img {
-    height: 165.5vh;
     object-fit: cover; }
   .contact .wrapper {
     height: 779px; }
