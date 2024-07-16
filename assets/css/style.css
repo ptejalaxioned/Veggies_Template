@@ -593,8 +593,6 @@ footer p {
 
   .contact img {
     object-fit: cover; }
-  .contact .wrapper {
-    height: 779px; }
   .contact-info-list li {
     width: 45%; } }
 /*media query for 995px starts here*/
@@ -693,7 +691,7 @@ footer p {
   .dish-name::after {
     width: 36.4%; }
 
-  .contact-content {
+  .contact {
     width: 49%;
     margin: 59px auto auto;
     transform: translate(-50%, -50%);
@@ -701,13 +699,9 @@ footer p {
     top: 50%;
     text-align: center; }
   .contact .wrapper {
-    height: 720px;
     margin-bottom: 0; }
   .contact-info-list li {
     width: 46%; }
-  .contact img {
-    height: 152vh;
-    object-fit: cover; }
   .contact .send-button {
     margin-bottom: 100px; }
   .contact-info-list {
@@ -719,7 +713,11 @@ footer p {
       width: 25%; }
 
   .about-us p {
-    padding-top: 40px; } }
+    padding-top: 40px; }
+
+  .veggies img {
+    height: 152vh;
+    object-fit: cover; } }
 /*media query for 768px starts here*/
 @media only screen and (max-width: 768px) {
   .banner-content {
@@ -851,8 +849,6 @@ footer p {
     padding-top: 17px; }
   .contact-content {
     margin: auto; }
-  .contact .wrapper {
-    height: 738px; }
 
   footer .wrapper {
     padding: 36px 41px;

@@ -48,9 +48,7 @@
 & img {
   object-fit: cover;
 }
-& .wrapper {
-  height: 779px;
-  }
+
 &-info-list li {
     width: 45%;
 }
@@ -167,7 +165,7 @@
 }
 
 .contact{
-&-content {
+&{
   width: 49%;
   margin: 59px auto auto;
   transform: translate(-50%, -50%);
@@ -177,17 +175,12 @@
 }
 
 & .wrapper {
-  height: 720px;
   margin-bottom: 0;
 }
 
 &-info-list li {
   width: 46%;
 }
-& img {
-    height: 152vh;
-    object-fit: cover;
-  }
 
   & .send-button {
     margin-bottom: 100px;
@@ -207,6 +200,11 @@
 
 .about-us p {
   padding-top: 40px;
+}
+
+.veggies img {
+  height: 152vh;
+  object-fit: cover;
 }
 }
 
@@ -408,9 +406,6 @@ footer .wrapper {
     }
     &-content {
       margin: auto;
-    }
-    & .wrapper {
-      height: 738px;
     }
   }
 
