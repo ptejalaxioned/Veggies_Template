@@ -229,6 +229,7 @@ header {
   justify-content: end; }
 .nav-list a {
   padding: 12px 13px;
+  border: 1px solid transparent;
   color: #a7a7a7;
   font-size: 17px;
   font-weight: 900; }
@@ -249,14 +250,10 @@ header {
   position: relative; }
 .banner .wrapper {
   width: 100%;
-  height: 121vh; }
+  position: relative; }
 .banner-image {
   height: 100%;
-  object-fit: cover;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 0; }
+  object-fit: cover; }
 .banner-content {
   width: 37%;
   position: absolute;
@@ -413,23 +410,19 @@ header {
   menu styling ends here
 =================================*/
 /*=================================
-  contact styling starts here
+  main styling ends here
+=================================*/
+/*=================================
+  footer styling starts here
 =================================*/
 .contact {
-  position: relative;
-  color: #767676; }
-.contact .wrapper {
-  width: 100%;
-  height: 745px;
-  margin-bottom: 15px;
-  align-items: center; }
-.contact .veggies {
+  color: #767676;
   position: absolute;
-  z-index: 1;
-  left: 0;
+  z-index: 2;
+  left: 55%;
   top: 0; }
 .contact button {
-  padding: 13px 30px;
+  padding: 16px 30px;
   border: 1px solid #000;
   background-color: transparent;
   color: #767676;
@@ -444,7 +437,7 @@ header {
 .contact a {
   color: #767676; }
 .contact textarea {
-  height: 212px;
+  height: 207px;
   width: 100%;
   padding: 10px 13px;
   border: none;
@@ -458,18 +451,14 @@ header {
 .contact .info {
   line-height: 23px; }
 
-.contact-content {
+.contact {
   width: 36.5%;
-  margin: 65px auto auto;
+  margin: 52px auto auto;
   display: flex;
-  flex-direction: column;
-  position: absolute;
-  z-index: 2;
-  left: 55%;
-  top: 0; }
+  flex-direction: column; }
 
 .contact-info-list {
-  margin: 76px 0 56px;
+  margin: 76px 0 57px;
   display: flex;
   justify-content: space-between; }
   .contact-info-list li {
@@ -488,31 +477,31 @@ header {
     background-color: transparent;
     font-size: 17px; }
 
-/*=================================
-  contact styling ends here
-=================================*/
-/*=================================
-  main styling ends here
-=================================*/
-/*=================================
-  footer styling starts here
-=================================*/
+footer .contact h3 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 900; }
 footer {
-  width: 100%;
   margin: auto;
-  position: absolute;
-  z-index: 4;
-  left: 0;
-  top: none;
+  position: relative;
   color: #3f3c3c; }
 footer .wrapper {
+  width: 100%; }
+footer p {
+  padding-left: 88px; }
+
+.footer-down {
+  width: 86.7%;
+  position: absolute;
+  z-index: 4;
+  left: 6.65%;
+  top: none;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 36px 0;
+  padding: 32px 0;
   border-top: 2px solid #f0f8ff; }
-footer p {
-  padding-left: 88px; }
 
 .bootstrap {
   color: #228b51; }
@@ -592,14 +581,7 @@ footer p {
   hover styling ends here
 =================================*/
 /*media query for 1024px starts here*/
-@media only screen and (max-width: 1280px) {
-  .banner .wrapper {
-    height: 138vh; } }
-/*media query for 1024px starts here*/
 @media only screen and (max-width: 1024px) {
-  .banner .wrapper {
-    height: 116vh; }
-
   .main-menu-list li {
     width: 46.7%; }
 
@@ -610,10 +592,7 @@ footer p {
     width: 25%; }
 
   .contact img {
-    height: 165.5vh;
     object-fit: cover; }
-  .contact .wrapper {
-    height: 779px; }
   .contact-info-list li {
     width: 45%; } }
 /*media query for 995px starts here*/
@@ -686,9 +665,6 @@ footer p {
   .wrapper {
     width: 95%; }
 
-  .banner .wrapper {
-    height: 112vh; }
-
   .turnip-green {
     padding: 65px 0; }
     .turnip-green-list {
@@ -715,21 +691,17 @@ footer p {
   .dish-name::after {
     width: 36.4%; }
 
-  .contact-content {
+  .contact {
     width: 49%;
     margin: 59px auto auto;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 50%;
+    top: 40%;
     text-align: center; }
   .contact .wrapper {
-    height: 720px;
     margin-bottom: 0; }
   .contact-info-list li {
     width: 46%; }
-  .contact img {
-    height: 152vh;
-    object-fit: cover; }
   .contact .send-button {
     margin-bottom: 100px; }
   .contact-info-list {
@@ -741,15 +713,17 @@ footer p {
       width: 25%; }
 
   .about-us p {
-    padding-top: 40px; } }
+    padding-top: 40px; }
+
+  .veggies img {
+    height: 152vh;
+    object-fit: cover; } }
 /*media query for 768px starts here*/
 @media only screen and (max-width: 768px) {
   .banner-content {
-    width: 57%;
+    width: 80%;
     left: 50%;
     top: 50%; }
-  .banner .wrapper {
-    height: 87vh; }
 
   .img-list li {
     width: 33.3%; }
@@ -766,13 +740,11 @@ footer p {
   .about-us-left {
     width: 80%; }
 
-  .contact-content {
-    width: 61%; } }
+  .contact {
+    width: 61%;
+    top: 45%; } }
 /*media query for 640px starts here*/
 @media only screen and (max-width: 640px) {
-  .banner .wrapper {
-    height: 69vh; }
-
   .img-list li {
     width: 50%; }
 
@@ -782,7 +754,13 @@ footer p {
   footer p {
     padding-left: 0px; }
   footer footer .wrapper {
-    padding: 36px 32px; } }
+    padding: 36px 32px; }
+
+  .veggies img {
+    height: 145vh; }
+
+  .contact {
+    top: 43%; } }
 /*media query for 480px starts here*/
 @media only screen and (max-width: 480px) {
   .banner-content {
@@ -792,8 +770,6 @@ footer p {
   .banner-image img {
     height: 470px;
     object-fit: cover; }
-  .banner .wrapper {
-    height: 470px; }
 
   .turnip-green {
     padding: 50px 0; }
@@ -878,19 +854,26 @@ footer p {
     height: 173vh; }
   .contact {
     padding-top: 17px; }
-  .contact-content {
+  .contact {
     margin: auto; }
-  .contact .wrapper {
-    height: 738px; }
 
-  footer .wrapper {
+  .footer-down {
     padding: 36px 41px;
     flex-direction: column;
     align-items: center;
     gap: 21px;
     text-align: center; }
-  footer p {
-    padding-left: 0px; } }
+  .footer-down p {
+    padding-left: 0px; }
+
+  .veggies img {
+    height: 170vh; }
+
+  .contact {
+    top: 40%; }
+
+  .contact-info-list li {
+    width: 80%; } }
 /*media query for 375px starts here*/
 @media only screen and (max-width: 375px) {
   .dish-name {
@@ -910,7 +893,10 @@ footer p {
       width: 63%; }
 
   .about-us p {
-    font-size: 27px; } }
+    font-size: 27px; }
+
+  .contact-info-list li {
+    width: 90%; } }
 /*media query for 320px starts here*/
 @media only screen and (max-width: 320px) {
   .dish-name::after {
@@ -926,7 +912,7 @@ footer p {
   .about-us p {
     font-size: 25px; }
 
-  footer .wrapper {
+  .footer-down {
     padding: 36px 14px; } }
 
 /*# sourceMappingURL=style.css.map */
