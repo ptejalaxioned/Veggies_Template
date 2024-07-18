@@ -170,7 +170,7 @@
   margin: 59px auto auto;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: 50%;
+  top: 40%;
   text-align: center;
 }
 
@@ -213,7 +213,7 @@
 
   .banner{
     &-content {
-      width: 57%;
+      width: 80%;
           left: 50%;
           top: 50%;    
     }
@@ -234,8 +234,11 @@
 .about-us-left {
   width: 80%;
 }
-.contact-content {
+
+.contact
+{
   width: 61%;
+  top: 45%;
 }
 }
 
@@ -254,6 +257,13 @@ footer{
 footer .wrapper {
   padding: 36px 32px;
 }
+}
+.veggies img {
+  height: 145vh;
+}
+
+.contact{
+  top: 43%;
 }
 }
 /*media query for 480px starts here*/
@@ -404,13 +414,13 @@ footer .wrapper {
     & {
       padding-top: 17px;
     }
-    &-content {
+    &{
       margin: auto;
     }
   }
 
-  footer{
-    & .wrapper {
+  .footer-down{
+    &{
       padding: 36px 41px;
       flex-direction: column;
       align-items: center;
@@ -423,6 +433,16 @@ footer .wrapper {
     }
   
   }
+
+  .veggies img {
+    height: 170vh;
+}
+.contact {
+  top: 40%;
+}
+.contact-info-list li {
+  width: 80%;
+}
 }
 
 /*media query for 375px starts here*/
@@ -454,7 +474,9 @@ footer .wrapper {
 .about-us p {
   font-size: 27px;
 }
-
+.contact-info-list li {
+  width: 90%;
+}
 }
 
 /*media query for 320px starts here*/
@@ -473,7 +495,7 @@ footer .wrapper {
 .about-us p {
   font-size: 25px;
 }
-footer .wrapper {
+.footer-down {
   padding: 36px 14px;
 }
 }

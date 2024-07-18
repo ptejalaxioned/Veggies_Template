@@ -696,7 +696,7 @@ footer p {
     margin: 59px auto auto;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 50%;
+    top: 40%;
     text-align: center; }
   .contact .wrapper {
     margin-bottom: 0; }
@@ -721,7 +721,7 @@ footer p {
 /*media query for 768px starts here*/
 @media only screen and (max-width: 768px) {
   .banner-content {
-    width: 57%;
+    width: 80%;
     left: 50%;
     top: 50%; }
 
@@ -740,8 +740,9 @@ footer p {
   .about-us-left {
     width: 80%; }
 
-  .contact-content {
-    width: 61%; } }
+  .contact {
+    width: 61%;
+    top: 45%; } }
 /*media query for 640px starts here*/
 @media only screen and (max-width: 640px) {
   .img-list li {
@@ -753,7 +754,13 @@ footer p {
   footer p {
     padding-left: 0px; }
   footer footer .wrapper {
-    padding: 36px 32px; } }
+    padding: 36px 32px; }
+
+  .veggies img {
+    height: 145vh; }
+
+  .contact {
+    top: 43%; } }
 /*media query for 480px starts here*/
 @media only screen and (max-width: 480px) {
   .banner-content {
@@ -847,17 +854,26 @@ footer p {
     height: 173vh; }
   .contact {
     padding-top: 17px; }
-  .contact-content {
+  .contact {
     margin: auto; }
 
-  footer .wrapper {
+  .footer-down {
     padding: 36px 41px;
     flex-direction: column;
     align-items: center;
     gap: 21px;
     text-align: center; }
-  footer p {
-    padding-left: 0px; } }
+  .footer-down p {
+    padding-left: 0px; }
+
+  .veggies img {
+    height: 170vh; }
+
+  .contact {
+    top: 40%; }
+
+  .contact-info-list li {
+    width: 80%; } }
 /*media query for 375px starts here*/
 @media only screen and (max-width: 375px) {
   .dish-name {
@@ -877,7 +893,10 @@ footer p {
       width: 63%; }
 
   .about-us p {
-    font-size: 27px; } }
+    font-size: 27px; }
+
+  .contact-info-list li {
+    width: 90%; } }
 /*media query for 320px starts here*/
 @media only screen and (max-width: 320px) {
   .dish-name::after {
@@ -893,7 +912,7 @@ footer p {
   .about-us p {
     font-size: 25px; }
 
-  footer .wrapper {
+  .footer-down {
     padding: 36px 14px; } }
 
 /*# sourceMappingURL=style.css.map */
